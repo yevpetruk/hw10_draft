@@ -1,0 +1,18 @@
+# model outputs
+fine_tuned_model/
+results/
+
+# checkpoints
+**/checkpoint-*/
+
+# pytorch
+*.pt
+*.bin
+*.safetensors
+
+# venv
+.venv/
+
+# cache
+__pycache__/
+.cache/
