@@ -1,5 +1,5 @@
 import pandas as pd
-from datasets import Datasetgit commit -m "first commit"
+from datasets import Dataset
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
@@ -37,7 +37,6 @@ model = AutoModelForSequenceClassification.from_pretrained(
 # Параметры обучения
 training_args = TrainingArguments(
     output_dir="./results",
-    evaluation_strategy="no",
     per_device_train_batch_size=8,
     num_train_epochs=3,
     learning_rate=2e-5,

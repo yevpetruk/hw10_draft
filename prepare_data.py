@@ -23,8 +23,7 @@ df.to_csv("data/cleaned_data.csv", index=False)
 train_df, test_df = train_test_split(
     df,
     test_size=0.25,
-    random_state=42,
-    stratify=df["label"]
+    random_state=42
 )
 
 train_df.to_csv("data/train.csv", index=False)
